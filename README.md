@@ -17,6 +17,14 @@
 </p>
 
 ---
+### FORK NOTES:
+Forked only to keep the project building. Android build breaks on 
+```
+@invertase/react-native-apple-authentication/android/src/main/java/com/RNAppleAuthentication/webview/SignInWebViewDialogFragment.kt:53: Error: Use requireContext() instead of context!! [UseRequireInsteadOfGet]
+      val webView = WebView(context!!).apply {
+                            ~~~~~~~~~
+```
+Replaced `context!!` with `requireContext()` call. This fork will be removed once original package is fixed (current version: 2.1.2).
 
 A well typed React Native library providing support for Apple Authentication on iOS and Android, including support for all `AppleButton` variants.
 
