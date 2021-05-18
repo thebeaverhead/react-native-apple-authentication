@@ -14,7 +14,7 @@
     "build:clean": "rimraf ios/build android/build example/android/app/build example/ios/build",
     "build:docs": "typedoc --includeDeclarations --excludeExternals --out docs --plugin typedoc-plugin-markdown --hideBreadcrumbs",
     "precommit": "npm run prepare && npm run build:all",
-    "prepare": "npm run tsc:compile && npm prepare:example",
+    "prepare": "npm run tsc:compile && npm run prepare:example",
     "prepare:example": "cd example && npm && cd ios && (pod install || true)",
     "shipit": "npm np"
   },
