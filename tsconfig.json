@@ -18,7 +18,8 @@
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "lib": ["es2015", "es2016", "esnext"]
+    "lib": ["es2015", "es2016", "esnext"],
+    "types": ["react"]
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
